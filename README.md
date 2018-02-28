@@ -2,6 +2,8 @@
 
 This demonstrates how to use [Conan.io](http://docs.conan.io/en/latest/introduction.html) with [cmake](https://cmake.org/documentation/) to create multiple single-configuration Visual Studio 2017 solution files.
 
+See also https://github.com/claremacrae/googletest-starter-project, which shows a much better way of using Visual Studio with Conan and CMake.
+
 ## Usage
 
 To use:
