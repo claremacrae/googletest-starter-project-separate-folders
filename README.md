@@ -24,7 +24,18 @@ C:\Users\Clare\Documents\Programming\GitHub\googletest-starter-project-separate-
         
     * `build64-debug\googletest-starter-project.sln`
         * Debug works
-        * Release, MinSizeRel, RelWithDebInfo all give LNK2038, LNK2019 link errors
+        * Release, MinSizeRel, RelWithDebInfo all give
+
+```
+1>gtest.lib(gtest-all.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in main.obj
+1>gtest.lib(gtest-all.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in main.obj
+1>LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+1>gtest.lib(gtest-all.obj) : error LNK2019: unresolved external symbol __imp__invalid_parameter referenced in function "void * __cdecl std::_Allocate<struct std::_Default_allocate_traits<1> >(unsigned __int64,unsigned __int64,unsigned __int64)" (??$_Allocate@U?$_Default_allocate_traits@$00@std@@@std@@YAPEAX_K0_K@Z)
+1>gtest.lib(gtest-all.obj) : error LNK2019: unresolved external symbol __imp__calloc_dbg referenced in function "char * __cdecl std::_Maklocstr<char>(char const *,char *,struct _Cvtvec const &)" (??$_Maklocstr@D@std@@YAPEADPEBDPEADAEBU_Cvtvec@@@Z)
+1>gtest.lib(gtest-all.obj) : error LNK2019: unresolved external symbol __imp__CrtDbgReportW referenced in function "void * __cdecl std::_Allocate<struct std::_Default_allocate_traits<1> >(unsigned __int64,unsigned __int64,unsigned __int64)" (??$_Allocate@U?$_Default_allocate_traits@$00@std@@@std@@YAPEAX_K0_K@Z)
+1>C:\Users\Clare\Documents\Programming\GitHub\googletest-starter-project-separate-folders\build64-debug\tests\Release\tests.exe : fatal error LNK1120: 3 unresolved externals
+
+```
 
 ## Things to note
 
