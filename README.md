@@ -21,7 +21,7 @@ To use:
 ## Things to note
 
 * This uses conan's [`cmake`](http://docs.conan.io/en/latest/reference/generators/cmake.html) generator, which can only generate a single configuration at a time
-* Don't be tempted to use [`visual_studio`](http://docs.conan.io/en/latest/reference/generators/visualstudio.html) - it is for the case where you are hand-maintaining the contents of your solution files and projects, and just want Conan to manage 3rd-party dependencies.
+* Don't be tempted to use the [`visual_studio`](http://docs.conan.io/en/latest/reference/generators/visualstudio.html) generator - it is for the case where you are hand-maintaining the contents of your solution files and projects, and just want Conan to manage 3rd-party dependencies.
 * When building inside Visual Studio, if you get any of the following errors, it means you are building a configuration that differs from the one the .sln file was set up for, that is, you have opened the debug .sln, and create a release build, or vice versa.
 
 ```
