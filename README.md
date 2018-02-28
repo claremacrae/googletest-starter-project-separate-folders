@@ -9,10 +9,10 @@ See also https://github.com/claremacrae/googletest-starter-project, which shows 
 To use:
 
 1. Clone or download this repo
-2. Make sure you have CMake installed
-3. Make sure you have Conan installed
-4. Run `build_and_test.bat`
-5. You can also either of the following solution files in Visual Studio, but you must be careful to only build the supported configurations:
+1. Make sure you have CMake installed
+1. Make sure you have Conan installed
+1. Run `build_and_test.bat`
+1. You can also either of the following solution files in Visual Studio, but you must be careful to only build the supported configurations:
     * `build64-release\googletest-starter-project.sln`
         * MinSizeRel, Release, RelWithDebInfo work
         * Debug gives linker errors - see below
