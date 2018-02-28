@@ -9,6 +9,7 @@ See also https://github.com/claremacrae/googletest-starter-project, which shows 
 To use:
 
 1. Clone or download this repo
+1. Make sure you have Visual Studio 2017 installed
 1. Make sure you have CMake installed
 1. Make sure you have Conan installed
 1. Run `build_and_test.bat`
